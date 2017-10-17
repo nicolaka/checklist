@@ -57,7 +57,8 @@ Source: https://github.com/nicolaka/checklist
 * Restricted direct access (SSH/RDP) 
 * Utilize built-in Secrets functionality (encrypted, controlled)
 * Rotate orchestration join keys
-* Use built-in or internal CA
+* Use built-in or your own CA for intra-cluster mTLS (Node Identity, Mgmt Traffic)
+* Valid SSL/TLS certificates for UCP and DTR
 * Resources:
     * [Security Reference Architecture](https://success.docker.com/article/Docker_Reference_Architecture-_Securing_Docker_EE_and_Security_Best_Practices)
     * [Docker Security Bench](https://github.com/docker/docker-bench-security)
