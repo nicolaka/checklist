@@ -8,7 +8,7 @@ Source: https://github.com/nicolaka/checklist
 
 ------------------------------------------------------
 
-##☑ Infrastructure 
+## ☑ Infrastructure 
  
 * Cluster Sizing and Zoning
 * Supported and Compatible ( OS, Docker Engine, UCP, DTR) 
@@ -20,7 +20,7 @@ Source: https://github.com/nicolaka/checklist
     * [Compatibility Matrix](https://success.docker.com/Policies/Compatibility_Matrix)
     * [System Requirements](https://success.docker.com/article/Docker_Reference_Architecture-_Docker_EE_Best_Practices_and_Design_Considerations_17_03#astandarddeploymentarchitecture)
 
-##☑ Orchestration Management
+## ☑ Orchestration Management
 
  * Redundant/Highly Available UCP managers 
  * Deployed in odd numbers (3,5,7) to maintain quorum
@@ -36,7 +36,7 @@ Source: https://github.com/nicolaka/checklist
          * [Limiting Application Deployment Workers](https://docs.docker.com/datacenter/ucp/2.2/guides/admin/configure/restrict-services-to-worker-nodes/)
          * [Resource Labeling](https://docs.docker.com/datacenter/ucp/2.2/guides/admin/configure/add-labels-to-cluster-nodes/)
 
-##☑ Image Distribution
+## ☑ Image Distribution
 
 * Redundant (3,5,7) DTR Replicas 
 * Replicated and secured image backend storage (NFS, S3, Azure Storage…etc)
@@ -48,7 +48,7 @@ Source: https://github.com/nicolaka/checklist
     * [Security Scanning](https://docs.docker.com/datacenter/dtr/2.3/guides/admin/configure/set-up-vulnerability-scans/)
     * [Garbage Collection](https://docs.docker.com/datacenter/dtr/2.3/guides/admin/configure/garbage-collection/)
 
-##☑ Security 
+## ☑ Security 
 
 * Utilize Docker EE RBAC Model ( Subjects, Grants, Roles, Collection, Resource)
 * AD/LDAP groups mapped to teams and organizations 
@@ -65,7 +65,7 @@ Source: https://github.com/nicolaka/checklist
     * [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)
     * [Introduction to User Namespaces in Docker Engine](https://success.docker.com/article/Introduction_to_User_Namespaces_in_Docker_Engine)
 
-##☑ Network
+## ☑ Network
 
 * Pick right networking driver for your application 
 * Select proper publishing mode ( Ingress vs. Host Mode)
@@ -79,7 +79,7 @@ Source: https://github.com/nicolaka/checklist
     * [Networking Reference Architecture](https://success.docker.com/article/Docker_Reference_Architecture-_Designing_Scalable,_Portable_Docker_Container_Networks)
     * [Service Discovery and Loadbalancing Reference Architecture](https://success.docker.com/article/Docker_Reference_Architecture-_Universal_Control_Plane_2.0_Service_Discovery_and_Load_Balancing)
 
-##☑ Storage 
+## ☑ Storage 
 
 * Production-ready configured engine storage backend 
 * Replicated and secure DTR storage backend
@@ -88,7 +88,7 @@ Source: https://github.com/nicolaka/checklist
     * [Configure Devicemapper for Production](https://docs.docker.com/engine/userguide/storagedriver/device-mapper-driver/)
     * [DTR Storage Backend](https://docs.docker.com/datacenter/dtr/2.3/guides/admin/configure/external-storage/)
 
-##☑ Logging and Monitoring
+## ☑ Logging and Monitoring
 
 * External centralized logging for engine and application containers logs
 * Local logging for active trouble-shooting 
@@ -99,7 +99,7 @@ Source: https://github.com/nicolaka/checklist
 * Resources:
     - [Logging Reference Architecture](https://success.docker.com/article/Docker_Reference_Architecture-_Docker_Logging_Design_and_Best_Practices)
 
-- ## Integration
+## ☑ Integration
 
     * UCP and DTR are well integrated ( SSO, DCT..etc)
     * CI/CD tooling ( Jenkins, Bamboo, CircleCI..etc)
@@ -112,7 +112,7 @@ Source: https://github.com/nicolaka/checklist
     * Incident/ticketing management systems (ServiceNow..etc)
     * Resources:
  
-##☑ Disaster Recovery
+## ☑ Disaster Recovery
 
 * Regular (rec. weekly) backups (UCP, DTR, and Swarm)
 * Well-tested, automated, and documented
@@ -125,7 +125,7 @@ Source: https://github.com/nicolaka/checklist
     * [UCP Backup and Recovery](https://docs.docker.com/datacenter/ucp/2.2/guides/admin/backups-and-disaster-recovery/)
     * [Swarm Backup and Recovery](https://docs.docker.com/engine/swarm/admin_guide/#recover-from-disaster)
 
-##☑ Testing
+## ☑ Testing
 
 * Multi-platform image pull and push to DTR
 * Confirm users have the right set of access to their respective resources
