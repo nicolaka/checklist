@@ -1,6 +1,5 @@
-------------------------------------------------------  
-  
-#THE ENTERPRISE IT CHECKLIST FOR DOCKER OPERATIONS 
+------------------------------------------------------   
+# THE ENTERPRISE IT CHECKLIST FOR DOCKER OPERATIONS 
          
 Version:17.06
 
@@ -9,13 +8,12 @@ Source: https://github.com/nicolaka/checklist
 ------------------------------------------------------
 
 ## ☑ Infrastructure 
- 
+
 * Cluster Sizing and Zoning
 * Supported and Compatible ( OS, Docker Engine, UCP, DTR) 
 * Adequate Resource ( Manager vs Worker Nodes)
     * Manager: 16G mem, 4 vCPU, 1+ Gbps, 32+ GB disk
     * Worker(minimum): 4G mem, 2 vCPU, 100+ Mbps, 8 GB disk
-
 * Resources
     * [Compatibility Matrix](https://success.docker.com/Policies/Compatibility_Matrix)
     * [System Requirements](https://success.docker.com/article/Docker_Reference_Architecture-_Docker_EE_Best_Practices_and_Design_Considerations_17_03#astandarddeploymentarchitecture)
@@ -101,16 +99,16 @@ Source: https://github.com/nicolaka/checklist
 
 ## ☑ Integration
 
-    * UCP and DTR are well integrated ( SSO, DCT..etc)
-    * CI/CD tooling ( Jenkins, Bamboo, CircleCI..etc)
-    * Development tooling (dev machines, IDEs)
-    * Configuration automation tools (Puppet, Chef, Ansible, Salt)
-    * Resource provisioning systems (Terraform..etc)
-    * Change management systems
-    * Internal/external DNS or other service discovery and registration systems
-    * Load balancing for both the management plane and each of the applications ( L4/L7)
-    * Incident/ticketing management systems (ServiceNow..etc)
-    * Resources:
+* UCP and DTR are well integrated ( SSO, DCT..etc)
+* CI/CD tooling ( Jenkins, Bamboo, CircleCI..etc)
+* Development tooling (dev machines, IDEs)
+* Configuration automation tools (Puppet, Chef, Ansible, Salt)
+* Resource provisioning systems (Terraform..etc)
+* Change management systems
+* Internal/external DNS or other service discovery and registration systems
+* Load balancing for both the management plane and each of the applications ( L4/L7)
+* Incident/ticketing management systems (ServiceNow..etc)
+
  
 ## ☑ Disaster Recovery
 
