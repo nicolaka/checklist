@@ -5,6 +5,8 @@ Version:17.06
 
 Source: https://github.com/nicolaka/checklist
 
+`docker run -t nicolaka/checklist:17.06`
+
 ------------------------------------------------------
 
 ## ☑ Infrastructure 
